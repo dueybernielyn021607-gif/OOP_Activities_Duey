@@ -1,0 +1,3 @@
+Private attributes: public attributes can be changed by any class with no checks. Private ones force other classes to use the setters, which validate the value first (encapsulation).
+Missing super(...): it won’t compile. Java tries to call an empty super(), but Student only has a constructor that needs four values.
+Overriding displayInfo(): every kind of student uses the same method name and Java runs the correct version. The super.displayInfo() call also reuses the parent’s code instead of repeating it.
