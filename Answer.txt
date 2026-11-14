@@ -1,3 +1,10 @@
+Answer briefly as comments at the bottom of Main.java.
+
+1. Why should the attributes of Student be private instead of public?
 Private attributes: public attributes can be changed by any class with no checks. Private ones force other classes to use the setters, which validate the value first (encapsulation).
+
+2. What would happen if CollegeStudent did not call super(...) in its constructor?
 Missing super(...): it won’t compile. Java tries to call an empty super(), but Student only has a constructor that needs four values.
+
+3. What is the benefit of overriding displayInfo() instead of writing a new method with a different name?
 Overriding displayInfo(): every kind of student uses the same method name and Java runs the correct version. The super.displayInfo() call also reuses the parent’s code instead of repeating it.
