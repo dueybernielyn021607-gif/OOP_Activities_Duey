@@ -1,0 +1,8 @@
+1. Why is it better to change the price through setPrice() instead of making price public?
+setPrice() vs. public price: The setter validates the value, so a negative price is rejected and an object never holds invalid data.
+
+2. Which members does EBook inherit from Book, and which does it add on its own?
+EBook inherited and added members: EBook inherits the four attributes and all of Book’s methods, and it adds fileFormat, its getter and setter, and the overridden displayInfo().
+
+3. If the library later adds an AudioBook class, how would inheritance make that easier?
+Adding an AudioBook later: AudioBook can extend Book, add only its own details, and go into the same ArrayList<Book>, so the existing loop works without changes.
